@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:ital,wght@1,300&family=Titillium+Web:ital,wght@1,300&display=swap');
+*{
+font-family: 'Lato', sans-serif; 
+font-weight: bold;    
+}
+
+header{
+    text-align: center;
+    background-color: #0a5c0a;
+    padding: 15px;
+
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+.container-table{
+    text-align: center;
+}
+table{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin: auto;
+}
+th,td{
+    padding: .7em;
+    border: 1px solid #0a5c0a;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+   
+    width: 300px;
+}
+
+.add-Tarefa{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    background-color: white;
+    display:flexbox;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: 1%;
+}
+input, select{
+    width: 290px;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 8px;  
+    border-color:rgb(46, 45, 55);
+    margin-left: 20px;
+    border-width: 1px;
+}
+.check{
+    margin-top: auto;
+    width: 15px;
+    border-radius: 8px;
+    
+}
+label{
+    position: absolute; 
+    background-color: #fff;
+    font-size: 30px;
+    color: #0a5c0a;
+    margin-left: 40px;
+}
+.btn{
+    
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 8px;  
+    border-color:rgb(46, 45, 55);
+    margin-left: 20px;
+    border-width: 1px;
+    background-color: #0a5c0a;
+    color: white;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    filter: brightness(0.8);
+}
+h1{
+    color:white;
+}
+.short{
+    max-width: 45px;
+}
+dialog::backdrop{
+    background-color: rgb(0 0 0 /.3);    
+    
+    
+}
+dialog{
+       
+    background-color: #fff;
+    z-index: 2; 
+    border: 1px solid #000;
+    border-radius: 8px;
+    border-color: #0a5c0a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    
+
+}

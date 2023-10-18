@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="home.css">
+
+	<title>Agenda</title>
+</head>
+
+<body>
+	<header>
+		<h1>Pacientes 2023</h1>
+	</header>
+
+	<main>
+
+		<div class="container-table">
+			<h2>Pacientes</h2>
+			<table id="agenda">
+				<thead>
+					<tr>
+						<th class="short">Seleção</th>
+						<th class="short" id="idPaciente">Id</th>
+						<th>Nome</th>
+						<th>Horário</th>
+						<th>Procedimento</th>
+						<th>Dia</th>
+					</tr>
+				</thead>
+				<tbody id="table" class="table"></tbody>
+			</table>
+		</div>
+
+
+
+		<div class="container-input">
+			<form class="add-Tarefa" id="formulario">
+				<label for="nome">Nome</label>
+				<input id="nome" name="nome" type="text" placeholder="Digite o nome" class="campo">
+
+				<label for="descricao">Data</label>
+				<input id="descricao" name="descricao" type="text" placeholder="Digite a descrição" class="campo">
+
+				<label for="prazo">Horario</label>
+				<select name="prazo" id="prazo">
+					<option value="8:00">8:00</option>
+					<option value="8:30">8:30</option>
+					<option value="9:00">9:00</option>
+					<option value="O9:30">O9:30</option>
+					<option value="10:00">10:00</option>
+					<option value="10:30">10:30</option>
+					<option value="11:00">11:00</option>
+					<option value="13:00">13:00</option>
+					<option value="13:30">13:30</option>
+					<option value="14:00">14:00</option>
+					<option value="14:30">14:30</option>
+					<option value="15:00">15:00</option>
+					<option value="15:30">15:30</option>
+					<option value="16:00">16:00</option>
+					<option value="16:30">16:30</option>
+					<option value="17:00">17:00</option>
+					<option value="17:30">17:30</option>
+					<option value="18:00">18:00</option>
+				</select>
+
+				<label for="tag">Procedimento</label>
+				<select name="tag" id="tag">
+					<option value="Massagem">Massagem</option>
+					<option value="Drenagem">Drenagem</option>
+					<option value="Acupuntura">Acupuntura</option>
+					<option value="Osteopatia">Osteopatia</option>
+					<option value="Liberação Miofacsial">Liberação Miofacsial</option>
+					<option value="Quiropraxia">Quiropraxia</option>
+				</select>
+			</form>
+			<button id="add" class="btn">Adicionar Paciente</button>
+			<button id="edt" class="btn">Editar</button>
+			<button id="del" class="btn">Excluir</button>
+			<button id="bus" class="btn">Buscar</button>
+		</div>
+
+		<dialog id="modal">
+			<h2>Editar Informaçoes</h2>
+			<form class="add-Tarefa" id="formulario">
+				<label for="nome">Nome</label>
+				<input id="nome" name="nome" type="text" placeholder="Digite o nome" class="campo">
+
+				<label for="descricao">Data</label>
+				<input id="descricao" name="descricao" type="text" placeholder="Digite a descrição" class="campo">
+
+				<label for="prazo">Horario</label>
+				<select name="prazo" id="prazo">
+					<option value="8:00">8:00</option>
+					<option value="8:30">8:30</option>
+					<option value="9:00">9:00</option>
+					<option value="O9:30">O9:30</option>
+					<option value="10:00">10:00</option>
+					<option value="10:30">10:30</option>
+					<option value="11:00">11:00</option>
+					<option value="13:00">13:00</option>
+					<option value="13:30">13:30</option>
+					<option value="14:00">14:00</option>
+					<option value="14:30">14:30</option>
+					<option value="15:00">15:00</option>
+					<option value="15:30">15:30</option>
+					<option value="16:00">16:00</option>
+					<option value="16:30">16:30</option>
+					<option value="17:00">17:00</option>
+					<option value="17:30">17:30</option>
+					<option value="18:00">18:00</option>
+				</select>
+
+				<label for="tag">Procedimento</label>
+				<select name="tag" id="tag">
+					<option value="Massagem">Massagem</option>
+					<option value="Drenagem">Drenagem</option>
+					<option value="Acupuntura">Acupuntura</option>
+					<option value="Osteopatia">Osteopatia</option>
+					<option value="Liberação Miofacsial">Liberação Miofacsial</option>
+					<option value="Quiropraxia">Quiropraxia</option>
+				</select>
+			</form>
+			<button class="btn" id="send-edit">Editar</button>
+			<button class="btn" id="cancel-edit">Cancelar</button>
+		</dialog>
+
+		<dialog id="modal2">
+			<table id="agenda">
+				<thead>
+					<tr>
+						<th class="short">Seleção</th>
+						<th class="short" id="idPaciente">Id</th>
+						<th>Nome</th>
+						<th>Horário</th>
+						<th>Procedimento</th>
+						<th>Dia</th>
+					</tr>
+				</thead>
+				<tbody id="table" class="table"></tbody>
+			</table>
+			<form class="add-tarefa" id="formulario">
+				<label for="nome">Digite o ID</label>
+				<input id="ID" name="nome" type="text" placeholder="Digite o nome" class="campo">
+			</form>
+			<button class="btn" id="send-id">Buscar</button>
+			<button class="btn" id="close">Sair</button>
+		</dialog>
+
+
+	</main>
+
+</body>
+<script src="home.js"></script>
+
+</html>
